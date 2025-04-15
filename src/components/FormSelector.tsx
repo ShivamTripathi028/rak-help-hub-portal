@@ -14,13 +14,15 @@ const FormSelector = ({ onSelectForm }: FormSelectorProps) => {
         {/* Technical Support Card */}
         <div 
           onClick={() => onSelectForm('support')}
-          className="bg-white rounded-lg shadow-md border border-gray-200 p-6 transition-all hover:shadow-lg hover:bg-blue-50 cursor-pointer hover:border-blue-400"
+          className="bg-white rounded-lg shadow-md border border-gray-200 p-6 transition-all hover:shadow-lg hover:bg-blue-50 cursor-pointer hover:border-blue-400 flex flex-col h-full"
         >
-          <h3 className="text-xl font-bold text-blue-600 mb-3">RAKWireless Technical Support</h3>
-          <p className="text-gray-700 mb-6">
-            Welcome! You can raise a request for RAKWireless Support using the options provided.
-          </p>
-          <div className="flex justify-end">
+          <div className="flex-grow">
+            <h3 className="text-xl font-bold text-blue-600 mb-3">RAKWireless Technical Support</h3>
+            <p className="text-gray-700">
+              Welcome! You can raise a request for RAKWireless Support using the options provided.
+            </p>
+          </div>
+          <div className="mt-6 flex justify-end">
             <button className="flex items-center text-blue-600 font-medium hover:text-blue-800 group">
               Get Support <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -30,13 +32,15 @@ const FormSelector = ({ onSelectForm }: FormSelectorProps) => {
         {/* Inquiry Card */}
         <div 
           onClick={() => onSelectForm('inquiry')}
-          className="bg-white rounded-lg shadow-md border border-gray-200 p-6 transition-all hover:shadow-lg hover:bg-blue-50 cursor-pointer hover:border-blue-400"
+          className="bg-white rounded-lg shadow-md border border-gray-200 p-6 transition-all hover:shadow-lg hover:bg-blue-50 cursor-pointer hover:border-blue-400 flex flex-col h-full"
         >
-          <h3 className="text-xl font-bold text-blue-600 mb-3">RAKWireless Inquiry Page</h3>
-          <p className="text-gray-700 mb-6">
-            This form is designed for reporting issues related to our website and store, specifically for the development team to...
-          </p>
-          <div className="flex justify-end">
+          <div className="flex-grow">
+            <h3 className="text-xl font-bold text-blue-600 mb-3">RAKWireless Inquiry Page</h3>
+            <p className="text-gray-700">
+              This form is designed to help us understand your IoT deployment needs. Please provide details about your region, application, and use case so our team can recommend the most suitable RAKWireless products and solutions.
+            </p>
+          </div>
+          <div className="mt-6 flex justify-end">
             <button className="flex items-center text-blue-600 font-medium hover:text-blue-800 group">
               Submit Inquiry <ArrowRight size={18} className="ml-2 group-hover:translate-x-1 transition-transform" />
             </button>

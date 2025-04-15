@@ -15,9 +15,6 @@ const Header = () => {
       </div>
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center">
-          <div className="absolute top-4 left-4 md:relative md:top-0 md:left-0 md:mb-8">
-            <img src="/rak-logo.svg" alt="RAKWireless Logo" className="h-10 md:h-12" />
-          </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8 mt-8 md:mt-0">
             Welcome to the RAKWireless Help Center
           </h1>

@@ -11,7 +11,7 @@ const InfoBox = () => {
         className="px-6 py-4 flex justify-between items-center cursor-pointer"
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <h2 className="text-lg font-medium text-blue-800">How does this work?</h2>
+        <h2 className="text-lg font-medium text-blue-800">📘 How does this work?</h2>
         {isExpanded ? (
           <ChevronUp className="text-blue-500" size={20} />
         ) : (
@@ -20,18 +20,22 @@ const InfoBox = () => {
       </div>
       
       {isExpanded && (
-        <div className="px-6 pb-4">
-          <p className="text-blue-900 mb-2">
-            When you submit the form, your ticket will be posted in the relevant channel.
+        <div className="px-6 pb-4 space-y-4 text-blue-900">
+          <p>
+            When you submit a form, your ticket will be posted in the relevant internal channel so the appropriate team can take action.
           </p>
-          <ul className="list-disc list-inside text-blue-900 mb-2">
-            <li>For IT or RAKWireless Support issues, refer channel <span className="font-medium">IT-Helpdesk-General</span></li>
-            <li>For Website or Store issues, refer channel <span className="font-medium">Webster-Jira-Update</span></li>
-          </ul>
-          <p className="text-blue-900">
-            Our working hours are between 9 AM to 6 PM (GMT+8). Once we've resolved the issue, we'll tag you in the respective thread. 
-            For further information you can communicate with the team in ticket.
-          </p>
+          <div>
+            <h3 className="font-semibold">Technical Support Requests</h3>
+            <p>For device setup, configuration, firmware, etc., your ticket will be handled by the RAK technical team via the Technical-Support channel.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold">Product Inquiries</h3>
+            <p>For help choosing the right LoRaWAN device, deployment advice, etc., the ticket will be routed to the Product-Sales channel for the sales and solution engineering teams.</p>
+          </div>
+          <div>
+            <h3 className="font-semibold">⏰ Working Hours</h3>
+            <p>We are available between 9 AM to 6 PM (GMT+8). Once your issue has been resolved, you'll be tagged in the corresponding thread. For any updates, follow the ticket thread or communicate directly with the assigned team.</p>
+          </div>
         </div>
       )}
     </div>
